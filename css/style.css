@@ -1,0 +1,409 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-family: "Noto Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* cho Chrome, Safari, and Opera */
+}
+
+/* container*/
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 85%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+
+.option-list {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+}
+
+.options > span {
+    margin: 0 45px 0 0;
+    font-weight: 700;
+}
+
+.options > span:not(:nth-child(2)) {
+    color: #d3d7da;
+}
+
+.options > i {
+    font-size: 35px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.view-all {
+    text-align: center;
+    margin-left: 70px;
+    padding: 10px 15px 12px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.view-all a {
+    margin-right: 15px;
+}
+
+.view-all a:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.view-all i {
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.list_product {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.product {
+    position: relative;
+}
+
+.product:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.product_body {
+    padding: 10px 10px 20px;
+}
+
+p[class="title"] {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+p[class="des"] {
+    font-size: 14px;
+    color: #767677;
+    margin-bottom: 2px;
+}
+span[class="moi"] {
+    font-size: 14px;
+}
+
+.product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon-hear {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.price {
+    padding: 2px 4px;
+    position: absolute;
+    top: 68%;
+    background-color: #fff;
+    font-size: 14px;
+    left: 4px;
+}
+
+.what-hot-content {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.header-title {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 40px;
+    margin: 40px 0px 10px;
+    text-transform: uppercase;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+.body img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video {
+    overflow: hidden;
+}
+
+.video video {
+    scale: 1.4;
+    overflow-y: hidden;
+    height: 100%;
+    padding-bottom: 14px;
+}
+
+.body-item {
+    position: relative;
+}
+
+.sub-body {
+    margin: 10px 0 0;
+    position: absolute;
+}
+
+.sub-body .title {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+.sub-body > span {
+    display: inline-block;
+    height: 48px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.sub-body_2 {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.trending > .body-item:not(:nth-child(3)) .btn-trending {
+    margin-top: 80px;
+}
+
+.body-item:hover {
+    cursor: pointer;
+}
+
+.mua-ngay {
+    display: inline-block;
+    margin-top: 17px;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    opacity: 0.9;
+    text-transform: uppercase;
+    text-align: left;
+    bottom: 0;
+}
+
+.mua-ngay:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.favourite {
+    margin-top: 300px;
+}
+
+.content-fav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 20px;
+    font-size: 40px;
+}
+
+.favourite_item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 60px 48px -8px 0px;
+    padding: 0px 0px 6.4px;
+    position: relative;
+}
+
+.favourite_item::after {
+    content: "";
+    width: 105%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.favourite_item:hover::after {
+    cursor: pointer;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.favourite h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.story {
+    width: 100%;
+    background-color: #f5f5e5;
+    margin-top: 30px;
+    padding: 80px 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+}
+
+.story_title {
+    width: 400px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.8;
+    margin-bottom: 20px;
+}
+
+.story_R .story_title {
+    width: 450px;
+    margin-bottom: 60px;
+}
+
+.member {
+    width: 100%;
+    padding: 40px;
+    background-color: #ede734;
+    display: flex;
+    justify-content: space-around;
+}
+
+.to_member {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.to_member > span {
+    font-size: 30px;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+    margin: 0px 40px 15px 0px;
+    font-weight: 700;
+}
+
+.subc-free {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 20px;
+    z-index: 2;
+}
+
+.flag {
+    width: 220px;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: #ede734;
+    position: absolute;
+    right: -3px;
+    z-index: 1;
+    bottom: -4px;
+}
+
+.subc-free:hover {
+    cursor: pointer;
+    color: #767677;
+}
+
+.footer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 3fr 2.5fr 3fr 1fr;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 30px;
+}
+
+.footer_list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer_list a:hover {
+    text-decoration: underline;
+}
+
+.footer_list > h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.footer_list > a {
+    text-transform: capitalize;
+    padding: 2px 0;
+}
+
+.footer_list img {
+    scale: 0.7;
+    margin-left: -32px;
+}
+
+.footer_list i {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.footer_list i:hover {
+    opacity: 0.7;
+}
+
+
