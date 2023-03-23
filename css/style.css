@@ -35,18 +35,19 @@ body::-webkit-scrollbar {
 .menu-top {
     width: 100%;
     background-color: #000;
-    height: 40px;
+    height: 47px;
     color: white;
     text-align: center;
-    padding: 11px 0px 10px 10px;
-    font-size: 13px;
+    padding: 12px 0px 10px 10px;
+    font-size: 14px;
     font-weight: 900;
 }
 
+
 .icon-menutop {
-    position: absolute;
-    top: 2.5%;
-    right: 37.5%;
+    position: relative;
+    top: 4%;
+    right: 35.5%;
 }
 
 
@@ -100,7 +101,7 @@ body::-webkit-scrollbar {
     margin-top: -50px;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 20%;
 
 }
 
@@ -112,8 +113,10 @@ body::-webkit-scrollbar {
 }
 
 .input-1 {
+    position: absolute;
     padding-left: 5px;
-    margin-left: 40px;
+    right: 10%;
+    margin-top: -20px;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -129,8 +132,12 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    margin-right: 50px;
+    margin-right: 3%;
     top: -44px;
+}
+
+.menu-right li {
+    margin-left: 8px;
 }
 
 .menu-right ul {
@@ -145,8 +152,9 @@ body::-webkit-scrollbar {
 
 .icon1 {
     position: relative;
-    right: 25px;
-    width: 5px;
+    right: 8.5%;
+    top: -35px;
+    width: 50px;
 }
 
 .menu-right img {
@@ -161,26 +169,180 @@ body::-webkit-scrollbar {
 
 .btn-dangki {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 6.8%;
+    right: 83.6%;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 22px 25px;
+    line-height: 20px;
+}
+
+.slide-1 {
+    position: relative;
+}
+
+
+.title-slide1 {
+    width: 510px;
+    position: absolute;
+    margin-top: -33%;
+    margin-left: 3.9%;
+    font-size: 50px;
+    color: #ffff;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 52px;
+    font-weight: 600;
+}
+
+.summary-slide1 p {
+    position: absolute;
+    width: 510px;
+    color: #ffff;
+    margin-top: -25.5%;
+    margin-left: 3.9%;
+    font-size: 22px;
+}
+
+.flag-btn-mua {
+    position: absolute;
+    width: 190px;
+    height: 57px;
+    border: 1px solid #ffff;
+    z-index: 1;
+    top: 7%;
+    left: 67px;
+
+}
+
+.video-slide2 {
+    position: relative;
+}
+
+.title-slide2 {
+    position: absolute;
+    width: 510px;
+    margin-top: -38%;
+    margin-left: 4.4%;
+    font-size: 50px;
+    color: #000;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 52px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.summary-slide2 p {
+    position: absolute;
+    width: 522px;
+    color: #000;
+    margin-top: -27%;
+    margin-left: 4.9%;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.btn-buy-male {
+    position: absolute;
+    top: 17.5%;
+    right: 81.5%;
     align-items: center;
     background-color: #000;
     color: #fff;
     display: inline-flex;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 0 20px;
+    padding: 19px 38px;
     line-height: 20px;
-    z-index: 2;
+    text-align: center;
 }
 
-.slide-1 span {
-    position: relative;
-    top: 5%;
-    right: 10%;
+.icon-male {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 67%;
 }
+
+.btn-buy-female {
+    position: absolute;
+    top: 18.8%;
+    right: 82.9%;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 18px 34px;
+    text-align: center;
+}
+
+.icon-female {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 67%;
+}
+
+.flag-btn-mua-male {
+    position: absolute;
+    width: 200px;
+    height: 57px;
+    border: 1px solid #000;
+    top: 17.6%;
+    left: 88px;
+}
+
+.flag-btn-mua-female {
+    position: absolute;
+    width: 184px;
+    height: 56px;
+    border: 1px solid #000;
+    top: 18.9%;
+    left: 83px;
+}
+
+.title-who {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 40px;
+    margin: 5% 8% 0;
+    text-transform: uppercase;
+}
+
+.cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: 405px 405px 405px;
+    grid-column-gap: 21px;
+    margin: 2% 7.8% 0;
+}
+
+.cards {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+
 
 
 
