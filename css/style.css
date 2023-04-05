@@ -43,13 +43,11 @@ body::-webkit-scrollbar {
     font-weight: 900;
 }
 
-
 .icon-menutop {
     position: relative;
     top: 5%;
     right: -1.5%;
 }
-
 
 .menu-small ul {
     position: relative;
@@ -83,7 +81,6 @@ body::-webkit-scrollbar {
 } */
 
 .img-left {
-
     width: 83px;
     height: 85px;
     top: 10%;
@@ -114,9 +111,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     top: 22px;
     margin-right: 15%;
-
 }
-
 
 .menu-center ul a {
     text-decoration: none;
@@ -165,7 +160,6 @@ body::-webkit-scrollbar {
     margin-top: -50px;
     align-items: center;
     justify-content: center;
-
 }
 
 .icon1 {
@@ -182,7 +176,6 @@ body::-webkit-scrollbar {
 .slide-1 {
     margin-top: -40px;
     position: relative;
-
 }
 
 .btn-mua {
@@ -205,7 +198,6 @@ body::-webkit-scrollbar {
     position: relative;
 }
 
-
 .title-slide1 {
     width: 510px;
     position: absolute;
@@ -213,7 +205,7 @@ body::-webkit-scrollbar {
     margin-left: 3.9%;
     font-size: 50px;
     color: #ffff;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     display: block;
     font-weight: bold;
     letter-spacing: 0;
@@ -238,7 +230,6 @@ body::-webkit-scrollbar {
     z-index: 1;
     top: 5.77%;
     left: 67px;
-
 }
 
 .video-slide2 {
@@ -252,7 +243,7 @@ body::-webkit-scrollbar {
     margin-left: 4.4%;
     font-size: 50px;
     color: #000;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     display: block;
     font-weight: bold;
     letter-spacing: 0;
@@ -345,7 +336,7 @@ body::-webkit-scrollbar {
     margin-left: 3.9%;
     font-size: 50px;
     color: #ffff;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     display: block;
     font-weight: bold;
     letter-spacing: 0;
@@ -370,7 +361,6 @@ body::-webkit-scrollbar {
     z-index: 1;
     top: 6.9%;
     left: 67px;
-
 }
 
 .btn-mua3 {
@@ -415,13 +405,12 @@ body::-webkit-scrollbar {
 /* menu */
 /* Hover menu */
 .menu-small li a:hover {
-    color: #00BDD6;
+    color: #00bdd6;
     font-weight: bold;
 }
 
-
 .menu-center li a:hover {
-    color: #00BDD6;
+    color: #00bdd6;
     font-weight: bold;
 }
 
@@ -432,14 +421,14 @@ body::-webkit-scrollbar {
 
 .menu-center:after {
     position: absolute;
-    content: '';
+    content: "";
     left: 0;
     bottom: 5px;
     height: 3px;
     opacity: 0;
     width: 100%;
     transition: all 0.2s linear;
-    background: #00BDD6;
+    background: #00bdd6;
 }
 
 .btn-mua:hover {
@@ -488,16 +477,17 @@ body::-webkit-scrollbar {
     font-size: 28px;
 }
 
-.options>span {
+.options > a {
     margin: 0 45px 0 0;
     font-weight: 700;
+    text-decoration: none;
 }
 
-.options>span:not(:nth-child(2)) {
+.options > span:not(:nth-child(2)) {
     color: #d3d7da;
 }
 
-.options>i {
+.options > i {
     font-size: 35px;
     margin-right: 10px;
     margin-top: 4px;
@@ -525,6 +515,14 @@ body::-webkit-scrollbar {
 .view-all i {
     font-size: 18px;
     margin: 0 8px;
+    padding: 10px;
+}
+
+.icon-next:hover,
+.icon-prev:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
 }
 
 .list_product {
@@ -532,6 +530,7 @@ body::-webkit-scrollbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-bottom: 160px;
 }
 
 .product {
@@ -583,8 +582,6 @@ span[class="moi"] {
 }
 
 .what-hot-content {
-    margin-top: 150px;
-    margin-bottom: 200px;
 }
 
 .header-title {
@@ -603,7 +600,7 @@ span[class="moi"] {
     margin-top: 30px;
 }
 
-.body img {
+.body img video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -614,42 +611,70 @@ span[class="moi"] {
 }
 
 .video video {
-    scale: 1.4;
-    overflow-y: hidden;
-    height: 100%;
-    padding-bottom: 14px;
+    height: 505px;
+    width: 100%;
 }
 
 .body-item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.btn-mua_ngay {
+    margin-top: auto;
+}
+
+.body-item > img {
+    display: inline-block;
+    width: 100%;
+    height: 505px;
+    flex-shrink: 0;
+    /* margin-bottom: 10px; */
 }
 
 .sub-body {
-    margin: 10px 0 0;
-    position: absolute;
-}
-
-.sub-body .title {
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 36px;
-}
-
-.sub-body>span {
-    display: inline-block;
-    height: 48px;
-    font-size: 13px;
-    line-height: 17px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .sub-body_2 {
     display: flex;
     flex-direction: column;
-    height: 200px;
+    /* background-color: red;  */
+    flex: 1;
+    margin-top: 10px;
 }
 
-.trending>.body-item:not(:nth-child(3)) .btn-trending {
-    margin-top: 80px;
+.sub-body-to {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px !important;
+    line-height: 2.25;
+    font-weight: 700;
+}
+
+.btn-trending {
+    margin-top: auto;
+}
+
+.sub-body .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.sub-body > span {
+    display: inline-block;
+    height: 48px;
+    font-size: 13px;
+    line-height: 17px;
 }
 
 .body-item:hover {
@@ -675,7 +700,7 @@ span[class="moi"] {
 }
 
 .favourite {
-    margin-top: 300px;
+    margin-top: 80px;
 }
 
 .content-fav {
@@ -757,7 +782,7 @@ span[class="moi"] {
     position: relative;
 }
 
-.to_member>span {
+.to_member > span {
     font-size: 30px;
     letter-spacing: 1.5;
     text-transform: uppercase;
@@ -819,7 +844,7 @@ span[class="moi"] {
     text-decoration: underline;
 }
 
-.footer_list>h2 {
+.footer_list > h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
@@ -827,7 +852,7 @@ span[class="moi"] {
     margin-bottom: 5px;
 }
 
-.footer_list>a {
+.footer_list > a {
     text-transform: capitalize;
     padding: 2px 0;
 }
