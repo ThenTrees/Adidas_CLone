@@ -619,17 +619,17 @@ span[class="moi"] {
     object-fit: cover;
 }
 
-.body-item-what {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.body-item-what > img {
+    display: inline-block;
+    width: 100%;
+    max-height: 520px;
+    flex-shrink: 0;
 }
-.body-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.body-item > img {
+    display: inline-block;
+    min-height: 440px;
+    max-height: 460px;
+    flex-shrink: 0;
 }
 
 .btn-mua_ngay {
