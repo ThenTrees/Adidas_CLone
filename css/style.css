@@ -26,10 +26,9 @@ html {
     font-family: "Noto Sans", sans-serif;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-    /* cho Chrome, Safari, and Opera */
-}
+} */
 
 /* menu */
 .menu-top {
@@ -461,29 +460,30 @@ body::-webkit-scrollbar {
 
 .container {
     width: 85%;
-    /* height: 100vh; */
     margin: 0 auto;
 }
 
 .option-list {
     display: flex;
-    justify-content: flex-start;
-    width: 100vw;
+    justify-content: space-between;
+    width: 88vw;
 }
 
 .options {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     font-size: 28px;
+    text-align: center;
+    align-items: center;
 }
 
 .options > a {
     margin: 0 45px 0 0;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
 }
 
-.options > span:not(:nth-child(2)) {
+.options > a:not(:nth-child(2)) {
     color: #d3d7da;
 }
 
@@ -495,8 +495,7 @@ body::-webkit-scrollbar {
 
 .view-all {
     text-align: center;
-    margin-left: 70px;
-    padding: 10px 15px 12px;
+    padding: 10px 0;
     letter-spacing: 2px;
     font-size: 14px;
     font-weight: 700;
@@ -514,7 +513,6 @@ body::-webkit-scrollbar {
 
 .view-all i {
     font-size: 18px;
-    margin: 0 8px;
     padding: 10px;
 }
 
@@ -627,14 +625,12 @@ span[class="moi"] {
     display: inline-block;
     width: 100%;
     max-height: 520px;
-    /* height: 402px; */
     flex-shrink: 0;
-    /* margin-bottom: 10px; */
 }
 .body-item > img {
     display: inline-block;
-    width: 100%;
     min-height: 440px;
+    max-height: 460px;
     flex-shrink: 0;
 }
 
@@ -658,7 +654,7 @@ span[class="moi"] {
     flex-direction: column;
 }
 
-.best-of-adidas{
+.best-of-adidas {
     margin-top: 80px;
 }
 
@@ -831,7 +827,6 @@ span[class="moi"] {
 .footer {
     width: 70%;
     margin: 0 auto;
-    padding: 40px 0;
     display: grid;
     grid-template-columns: 2fr 1.5fr 3fr 2.5fr 3fr 1fr;
 }
@@ -839,7 +834,7 @@ span[class="moi"] {
 .footer_list {
     display: flex;
     flex-direction: column;
-    padding: 20px 15px 30px;
+    padding: 0 15px;
 }
 
 .footer_list a {
