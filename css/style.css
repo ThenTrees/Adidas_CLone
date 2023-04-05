@@ -606,15 +606,12 @@ span[class="moi"] {
     object-fit: cover;
 }
 
-.video {
-    overflow: hidden;
+.body-item-what {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
-
-.video video {
-    height: 505px;
-    width: 100%;
-}
-
 .body-item {
     position: relative;
     display: flex;
@@ -626,12 +623,19 @@ span[class="moi"] {
     margin-top: auto;
 }
 
+.body-item-what > img {
+    display: inline-block;
+    width: 100%;
+    max-height: 520px;
+    /* height: 402px; */
+    flex-shrink: 0;
+    /* margin-bottom: 10px; */
+}
 .body-item > img {
     display: inline-block;
     width: 100%;
-    height: 505px;
+    min-height: 440px;
     flex-shrink: 0;
-    /* margin-bottom: 10px; */
 }
 
 .sub-body {
@@ -652,6 +656,10 @@ span[class="moi"] {
 .sub-body-to {
     display: flex;
     flex-direction: column;
+}
+
+.best-of-adidas{
+    margin-top: 80px;
 }
 
 .title {
