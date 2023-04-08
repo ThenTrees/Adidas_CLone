@@ -98,8 +98,8 @@ body::-webkit-scrollbar {
 }
 
 /* .menu-center {
-   position: relative; 
-}  */
+  position: relative;
+} */
 
 .menu-center ul {
   display: flex;
@@ -116,9 +116,11 @@ body::-webkit-scrollbar {
   position: relative;
   text-decoration: none;
   color: #000;
+  display: block;
 }
 
 .menu-center li {
+  /* position: relative; */
   text-decoration: none;
   padding: 0 10px;
   font-size: 14px;
@@ -126,28 +128,45 @@ body::-webkit-scrollbar {
   word-wrap: break-word;
 }
 
-.menu_child_list {
-  position: absolute;
-  padding: 0 32px;
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 2fr 1.5fr 1.5fr 1.5fr;
-  margin-top: 20px;
-  top: 100%;
+.menu-center .center-list {
+  width: 100%;
+}
+.menu-center ul li > .sub-menu {
+  background-color: white;
+  top: 80%;
   left: 0;
   width: 100%;
-  background-color: white;
-  margin-left: 5%;
+  position: absolute;
   opacity: 0;
   visibility: hidden;
-  transition: 0.25s linear;
+  transition: all 0.2s linear;
+  padding: 20px 80px;
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 3fr;
 }
-.menu_child_list > a {
-  font-weight: 400;
+.sub-menu-list > li > a {
+  width: 100%;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  padding: 5px 0;
+  padding: 3px 0;
 }
+.sub-menu-item h4 {
+  font-weight: 900;
+  padding: 10px 10px;
+}
+.sub-menu-list > li > img {
+  margin-bottom: 10px;
+}
+.sub-menu-list li a:hover {
+  text-decoration: underline;
+}
+
+.menu-center ul li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
 .menu-left {
   position: absolute;
   width: 180px;
@@ -202,8 +221,8 @@ body::-webkit-scrollbar {
 }
 
 .slide-1 {
-  position: relative;
-  margin-top: 40px;
+  /* position: relative; */
+  margin-top: 2.5%;
 }
 
 .content-slide1 {
@@ -211,7 +230,7 @@ body::-webkit-scrollbar {
   width: 510px;
   height: 380px;
   margin-left: 8%;
-  margin-top: -20%;
+  margin-top: -15%;
 }
 
 .btn-mua {
@@ -452,7 +471,7 @@ body::-webkit-scrollbar {
 .small-list a:hover {
   text-decoration: underline;
 }
-.menu-center a::after {
+.menu-center > ul > li > a::after {
   content: "";
   height: 3px;
   width: 0;
@@ -463,13 +482,8 @@ body::-webkit-scrollbar {
   transition: all 0.2s ease-in;
 }
 .menu-center a:hover::after {
-  width: 90%;
+  width: 100%;
 }
-
-/* .center-list:hover .menu_child_list {
-  opacity: 1;
-  visibility: visible;
-} */
 
 .icon-user:hover {
   opacity: 0.5;
