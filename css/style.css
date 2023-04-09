@@ -543,13 +543,14 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 
-.options > a {
+.options > p {
     margin: 0 45px 0 0;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.options > a:not(:nth-child(2)) {
+.options > p:not(:nth-child(2)) {
     color: #d3d7da;
 }
 
@@ -942,4 +943,9 @@ span[class="moi"] {
 
 .footer_list i:hover {
     opacity: 0.7;
+}
+
+/* js */
+.icon-arrow-op {
+    transform: translateX(230px);
 }
