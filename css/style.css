@@ -546,11 +546,21 @@ body::-webkit-scrollbar {
 .options > p {
     margin: 0 45px 0 0;
     font-weight: 600;
-    text-decoration: none;
     cursor: pointer;
 }
 
-.options > p:not(:nth-child(2)) {
+.option-p__setColor {
+    color: #000 !important;
+    /* transition: 0.4s all ease;
+        transform: translateX(200px); */
+}
+
+.fa-icon-arrow-op {
+    transition: 0.4s all ease;
+    /* transform: translateX(0px); */
+}
+
+.options p {
     color: #d3d7da;
 }
 
@@ -946,6 +956,6 @@ span[class="moi"] {
 }
 
 /* js */
-.icon-arrow-op {
-    transform: translateX(230px);
+.fa-icon-arrow-op {
+    transition: 0.5s all ease;
 }
