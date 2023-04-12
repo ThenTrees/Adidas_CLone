@@ -1,8 +1,7 @@
 $(document).ready(function () {
     $(".list_product_1").slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
-
+        // autoplay: true,
+        // autoplaySpeed: 1000,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 2,

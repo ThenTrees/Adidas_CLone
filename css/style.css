@@ -551,6 +551,8 @@ body::-webkit-scrollbar {
 
 .option-p__setColor {
     color: #000 !important;
+    transition: 1s all ease;
+    transform: translateX(10px);
     /* transition: 0.4s all ease;
         transform: translateX(200px); */
 }
@@ -580,6 +582,8 @@ body::-webkit-scrollbar {
 
 .view-all a {
     margin-right: 7rem;
+    color: #000;
+    padding: 2px;
 }
 
 .view-all a:hover {
