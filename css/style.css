@@ -456,7 +456,7 @@ body::-webkit-scrollbar {
 .cards {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 21px;
     font-size: 22px;
     font-weight: 600;
@@ -533,7 +533,6 @@ body::-webkit-scrollbar {
 .option-list {
     display: flex;
     justify-content: space-between;
-    width: 88vw;
 }
 
 .options {
@@ -580,7 +579,7 @@ body::-webkit-scrollbar {
 }
 
 .view-all a {
-    margin-right: 15px;
+    margin-right: 7rem;
 }
 
 .view-all a:hover {
@@ -609,11 +608,44 @@ body::-webkit-scrollbar {
     margin-bottom: 160px;
 }
 
+.list_product_1 {
+    margin-top: 32px;
+    margin-left: -20px;
+
+    /* margin-left: 120px; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+}
+
 .product {
     position: relative;
 }
 
+.product_1 {
+    position: relative;
+}
+
+.list_product_1 > .product_1 {
+    height: 400px;
+    width: 400px;
+}
+
+.product_1 > img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+
 .product:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.product_1:hover {
     border: 1px solid #000;
     cursor: pointer;
 }
@@ -622,7 +654,15 @@ body::-webkit-scrollbar {
     transition: 0.4s all ease;
     transform: translateY(-12px);
 }
+
+.product_1:hover .price_1 {
+    transition: 0.4s all ease;
+    transform: translateY(-12px);
+}
 .product_body {
+    padding: 10px 10px 20px;
+}
+.product_body_1 {
     padding: 10px 10px 20px;
 }
 
@@ -645,6 +685,10 @@ span[class="moi"] {
     width: 100%;
     object-fit: cover;
 }
+.product_1 img {
+    width: 100%;
+    object-fit: cover;
+}
 
 .icon-hear {
     position: absolute;
@@ -655,7 +699,15 @@ span[class="moi"] {
 .price {
     padding: 2px 4px;
     position: absolute;
-    top: 68%;
+    top: 71%;
+    background-color: #fff;
+    font-size: 14px;
+    left: 4px;
+}
+.price_1 {
+    padding: 2px 4px;
+    position: absolute;
+    top: 73%;
     background-color: #fff;
     font-size: 14px;
     left: 4px;
@@ -959,4 +1011,44 @@ span[class="moi"] {
 /* js */
 .fa-icon-arrow-op {
     transition: 0.5s all ease;
+}
+
+/* jquery */
+.slick-initialized .slick-slide {
+    margin-left: 20px;
+}
+
+.container_f {
+    position: relative;
+    overflow: hidden;
+    margin-left: 7.5%;
+    margin-bottom: 100px;
+}
+.slick-slider {
+    position: none;
+}
+
+.slick-prev {
+    top: -70px;
+    right: 70px;
+}
+.slick-next {
+    top: -70px;
+    right: 20px;
+}
+
+.slick-arrow {
+    z-index: 2;
+
+    padding: 9px 12px;
+    position: absolute;
+    background-color: #fff;
+    border: none;
+
+    color: #000;
+}
+
+.slick-arrow:hover {
+    background-color: #000;
+    color: #fff;
 }
