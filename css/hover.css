@@ -1,0 +1,47 @@
+.product--item__header:hover .pricee {
+    transition: 0.4s all ease;
+    transform: translateY(-12px);
+    z-index: 3;
+}
+
+/* .product--item__header:hover::after {
+    content: url("../img/what-hot/h1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+.item:first-child .product--item__header:hover::after {
+    content: url("../img/what-hot/h222.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.item:nth-child(2) .product--item__header:hover::after {
+    content: url("../img/what-hot/h211.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(3) .product--item__header:hover::after {
+    width: 383px;
+    height: 100%;
+    object-fit: cover;
+    content: url("../img/what-hot/h211.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.item:hover {
+    border: 1px solid #000;
+}
