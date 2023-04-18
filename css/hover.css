@@ -14,7 +14,7 @@
 } */
 
 .item:first-child .product--item__header:hover::after {
-    content: url("../img/what-hot/h222.webp");
+    content: url("../img/what-hot/1.webp");
     position: absolute;
     top: 0;
     right: 0;
@@ -22,8 +22,8 @@
     left: 0;
 }
 
-.item:nth-child(2) .product--item__header:hover::after {
-    content: url("../img/what-hot/h211.webp");
+.item:nth-child(4) .product--item__header:hover::after {
+    content: url("https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/315bec349a124014b5cfafa800d35541_9366/giày-superstar.jpg");
     position: absolute;
     top: 0;
     right: 0;
