@@ -4,6 +4,12 @@
     z-index: 3;
 }
 
+.product--item__header1:hover .pricee {
+    transition: 0.4s all ease;
+    transform: translateY(-12px);
+    z-index: 3;
+}
+
 /* .product--item__header:hover::after {
     content: url("../img/what-hot/h1.webp");
     position: absolute;
@@ -22,8 +28,8 @@
     left: 0;
 }
 
-.item:nth-child(4) .product--item__header:hover::after {
-    content: url("https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/315bec349a124014b5cfafa800d35541_9366/giày-superstar.jpg");
+.item:nth-child(2) .product--item__header:hover::after {
+    content: url("../img/what-hot/2-2.webp");
     position: absolute;
     top: 0;
     right: 0;
@@ -31,10 +37,8 @@
     left: 0;
 }
 .item:nth-child(3) .product--item__header:hover::after {
-    width: 383px;
-    height: 100%;
     object-fit: cover;
-    content: url("../img/what-hot/h211.webp");
+    content: url("../img/what-hot/3-3.webp");
     position: absolute;
     top: 0;
     right: 0;
@@ -42,6 +46,269 @@
     left: 0;
 }
 
-.item:hover {
+.item:nth-child(4) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/4-4.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(5) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/4-4.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(6) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/5-5.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(7) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/6-6.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(8) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/7-7.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(9) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/8-8.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(10) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/9-9.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(11) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/10-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(12) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/11-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(13) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/12-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(14) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/13-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(15) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/14-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(16) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/15-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(17) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/16-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(18) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/17_1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(19) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/18-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(20) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/19-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(21) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/20-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.item:nth-child(22) .product--item__header:hover::after {
+    content: url("../img/what-hot/2-2.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(23) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/2-2.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.item:nth-child(24) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/3-3.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(25) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/4-4.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(26) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/5-5.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(27) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/6-6.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(28) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/7-7.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(29) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/8-8.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(30) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/9-91.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:nth-child(31) .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/10-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.item:last-child .product--item__header:hover::after {
+    object-fit: cover;
+    content: url("../img/what-hot/11-1.webp");
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.item:hover,.item1:hover {
     border: 1px solid #000;
 }
