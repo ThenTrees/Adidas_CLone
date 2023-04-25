@@ -350,19 +350,22 @@ main {
 }
 
 .wrapper {
-    width: 100%;
+    min-width: 1290px;
     overflow: hidden;
     position: relative;
 }
 .sl_main {
+    width: 250%;
     display: flex;
     column-gap: 10px;
     position: relative;
+    transition: 1s all ease;
 }
 
 .sl_item {
     min-width: 278px;
     max-width: 300px;
+    width: 100%;
     flex: 1 0 100%;
 }
 .sl_item img {

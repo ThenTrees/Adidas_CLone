@@ -1,7 +1,6 @@
-// let options = document.querySelectorAll(".options");
+
 let options = document.querySelector(".options");
 const items = options.querySelectorAll("p");
-// const widthItems = options.querySelectorAll("p").offsetWidth;
 
 // Xử lý sự kiện "click" cho mỗi phần tử
 items.forEach(function (item, icon) {
