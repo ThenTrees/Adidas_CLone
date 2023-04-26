@@ -18,8 +18,8 @@ prevBtn.addEventListener("click", () => {
 function handleChangeSlide(direction) {
     if (direction === 1) {
         index++;
-        if (index > len - 4) {
-            index = len - 4;
+        if (index > len - 5) {
+            index = len - 5;
             return;
         }
         posX = posX - sliderItemWidth;
