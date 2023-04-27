@@ -30,11 +30,16 @@
 
 <body>
     <!-- menu -->
-    <div class="menu-top">
-        <span>GIAO HÀNG MIỄN PHÍ CHO THÀNH VIÊN CỦA ADICLUB</span>
-        <i class="fa-sharp fa-solid fa-chevron-down icon-menutop"></i>
-    </div>
-    <div class="menu-container">
+    <div class="menu-container" id="menu-header">
+        <div class="gototop">
+            <a id="gototop" href="javascript:;" onclick="gototop()"> &#8617; Về đầu trang</a>
+
+        </div>
+        <div class="menu-top">
+            <span>GIAO HÀNG MIỄN PHÍ CHO THÀNH VIÊN CỦA ADICLUB</span>
+            <i class="fa-sharp fa-solid fa-chevron-down icon-menutop"></i>
+        </div>
+
         <div class="menu-small">
             <ul class="small-list">
                 <li><a href="">trợ giúp</a></li>
@@ -465,6 +470,7 @@
                 <span>MUA ĐỒ NỮ</span>
                 <i class="fa-solid fa-arrow-right-long icon-female"></i></span>
             </div>
+
         </div>
     </div>
     <div class="slide-3">
@@ -480,33 +486,165 @@
                 <div class="flag-btn-mua3"></div>
             </div>
         </div>
-        <div class="container">
-            <div class="title-who">
-                <span>WHO ARE YOU SHOPPING FOR?</span>
+        <div class="container-who" id="who">
+            <div class="option-who">
+                <i class="fa-icon-arrow-op fa-solid fa-arrow-right-long icon-who"></i>
+                <p class="option-who-color">WOMEN</p>
+                <p class="">MEN</p>
+                <p class="">KIDS</p>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="../img/women.webp" alt="">
-                    <div class="gender">
-                        <span>WOMEN</span>
+            <div class="list_product_1">
+                <div class="product_2">
+                    <img src="../img/who-are/who1.png" alt="">
+                    <div class="who_category">
+                        <span>ALL SHOES</span>
+                    </div>
+                    <a style="text-decoration: none; color: #000;" href="#">
+                        <div class="flag-product-2">
+                        </div>
+                        <div class="link-product2">
+                            <p>PHÁT HIỆN</p>
+                            <i style="font-size: 25px;"
+                                class="fa-icon-arrow-op fa-solid fa-arrow-right-long icon-product-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item1.webp" alt="">
+                    <div class="title-product_1">
+                        <p>ORIGINALS SHOES</p>
+                    </div>
+
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item2.webp" alt="">
+                    <div class="title-product_1">
+                        <p>RUNNING SHOES</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../img/men.webp" alt="">
-                    <div class="gender">
-                        <span>MEN</span>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item3.webp" alt="">
+                    <div class="title-product_1">
+                        <p>CLEAN CLASSICS</p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../img/child.webp" alt="">
-                    <div class="gender">
-                        <span>KIDS</span>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item4.webp" alt="">
+                    <div class="title-product_1">
+                        <p>ULTRABOOST</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item5.webp" alt="">
+                    <div class="title-product_1">
+                        <p style="color: red;">SALE SHOES</p>
+                    </div>
+                </div>
+                <div class="product_2">
+                    <img src="../img/who-are/who1.png" alt="">
+                    <div class="who_category">
+                        <span>ALL CLOTHING</span>
+                    </div>
+                    <a style="text-decoration: none; color: #000;" href="#">
+                        <div class="flag-product-2">
+                        </div>
+                        <div class="link-product2">
+                            <p>PHÁT HIỆN</p>
+                            <i style="font-size: 25px;"
+                                class="fa-icon-arrow-op fa-solid fa-arrow-right-long icon-product-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item6.webp" alt="">
+                    <div class="title-product_1">
+                        <p>JACKETS</p>
+                    </div>
+
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item7.webp" alt="">
+                    <div class="title-product_1">
+                        <p>T-SHIRTS</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item8.webp" alt="">
+                    <div class="title-product_1">
+                        <p>JOGGERS & TRACKSUIT BOTTOMS</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item9.webp" alt="">
+                    <div class="title-product_1">
+                        <p>HOODIES</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item10.webp" alt="">
+                    <div class="title-product_1">
+                        <p>BRAS</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item11.webp" alt="">
+                    <div class="title-product_1">
+                        <p>ADICOLOR</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item12.webp" alt="">
+                    <div class="title-product_1">
+                        <p style="color: red;">SALE CLOTHING</p>
+                    </div>
+                </div>
+
+                <div class="product_2">
+                    <img src="../img/who-are/who1.png" alt="">
+                    <div class="who_category">
+                        <span>ALL ACCESSORIES</span>
+                    </div>
+                    <a style="text-decoration: none; color: #000;" href="#">
+                        <div class="flag-product-2">
+                        </div>
+                        <div class="link-product2">
+                            <p>PHÁT HIỆN</p>
+                            <i style="font-size: 25px;"
+                                class="fa-icon-arrow-op fa-solid fa-arrow-right-long icon-product-2"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item13.webp" alt="">
+                    <div class="title-product_1">
+                        <p>SOCKS</p>
+                    </div>
+
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item14.webp" alt="">
+                    <div class="title-product_1">
+                        <p>BAGS</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item15.webp" alt="">
+                    <div class="title-product_1">
+                        <p>HEADWEAR</p>
+                    </div>
+                </div>
+                <div class="product_2_item">
+                    <img src="../img/who-are/item16.webp" alt="">
+                    <div class="title-product_1">
+                        <p style="color: red;">SALE ACCESSORIES</p>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <!-- menu -->
-        <br><br><br><br>
+
         <main>
             <div class="container_f">
                 <div class="option-list">
@@ -867,6 +1005,7 @@
         <script src="../js/product_click.js"></script>
         <script src="../js/option.js"></script>
         <script src="../js/main.js"></script>
+        <script src="../js/option-who.js"></script>
 </body>
 
 </html>
