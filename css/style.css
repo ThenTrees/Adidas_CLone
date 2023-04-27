@@ -90,22 +90,24 @@ body::-webkit-scrollbar {
   height: 85px;
   top: 10%;
   margin-left: 40px;
+  z-index: 9;
 }
 .menu-container {
   position: relative;
-  height: 45px;
+  height: 85px;
   width: 100%;
+  background-color: white;
 }
 
-/* .menu-center {
-  position: relative;
-} */
+.menu-center {
+  background-color: white;
+  padding: 15px 0;
+}
 
 .menu-center ul {
   display: flex;
   position: relative;
-  margin-right: 10%;
-  margin-top: 18px;
+  margin-top: 7px;
   list-style-type: none;
   flex-direction: row;
   align-items: center;
@@ -128,7 +130,7 @@ body::-webkit-scrollbar {
   word-wrap: break-word;
 }
 
-.menu-center .center-list {
+.center-list {
   width: 100%;
 }
 .menu-center ul li > .sub-menu {
@@ -190,10 +192,12 @@ body::-webkit-scrollbar {
 }
 
 .menu-right {
+  position: absolute;
   display: flex;
   justify-content: flex-end;
   position: relative;
-  margin-right: 3%;
+  margin-right: 30px;
+  top: -17px;
 }
 
 .menu-right li {
@@ -283,6 +287,23 @@ body::-webkit-scrollbar {
 }
 .icon-btn-mua {
   margin-left: 20px;
+}
+#gototop {
+  display: none;
+}
+.gototop a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  z-index: 9;
+  position: fixed;
+  background-color: black;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  border-radius: 4px;
+  /* display: none; */
 }
 
 .slide-2 {
