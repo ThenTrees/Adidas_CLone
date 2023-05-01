@@ -36,4 +36,36 @@ function gototop() {
     
 }
 
+//Regex đăng nhập
+function Checkemail() {
+    var email = document.getElementById('txtemail').value;
+    var errorName = document.getElementById('error-email');
+    var regexName = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
+    if (email == '' || email == null) {
+        errorName.innerHTML = 'Vui lòng nhập địa chỉ e-mail hợp lệ';
+    } else if (!regexName.test(email)) {
+        errorName.innerHTML = "Nhập Email theo định dạng sau (abc@gmail.com)";
+    } else {
+        errorName.innerHTML = "";
+        return true;
+    }
+    return false;
+}
+
+function CheckMatKhau() {
+    var matkhau = document.getElementById('txtmatkhau').value;
+    var errorName = document.getElementById('error-matkhau');
+    var regexName = /.{6,}/;
+
+    if (matkhau == '' || matkhau == null) {
+        errorName.innerHTML = 'Mật khẩu không được để trống';
+    } else if (!regexName.test(matkhau)) {
+        errorName.innerHTML = "Mật khẩu chứa từ 6 kí tự trở lên";
+    } else {
+        errorName.innerHTML = "";
+        return true;
+    }
+    return false;
+}
 

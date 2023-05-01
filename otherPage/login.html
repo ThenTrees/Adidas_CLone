@@ -27,11 +27,15 @@
 </head>
 
 <body>
-    <div class="menu-top">
-        <span>GIAO HÀNG MIỄN PHÍ CHO THÀNH VIÊN CỦA ADICLUB</span>
-        <i class="fa-sharp fa-solid fa-chevron-down icon-menutop"></i>
-    </div>
-    <div class="menu-container">
+    <div class="menu-container" id="menu-header">
+        <div class="gototop">
+            <a id="gototop" href="javascript:;" onclick="gototop()"> &#8617; Về đầu trang</a>
+
+        </div>
+        <div class="menu-top">
+            <span>GIAO HÀNG MIỄN PHÍ CHO THÀNH VIÊN CỦA ADICLUB</span>
+            <i class="fa-sharp fa-solid fa-chevron-down icon-menutop"></i>
+        </div>
         <div class="menu-small">
             <ul class="small-list">
                 <li><a href="">trợ giúp</a></li>
@@ -431,17 +435,23 @@
                 <h2>ĐĂNG NHẬP</h2>
                 <p> <u>Bạn quên mật khẩu?</u></p>
                 <div class="input-login">
-                    <input style="width: 480px; height: 57px;" type="text" name="" id="" placeholder="Email *">
+                    <input onblur="Checkemail()" style="width: 480px; height: 57px;" type="text" name="txtemail"
+                        id="txtemail" placeholder="Email *">
+                    <div class="error"><span style="color: red;" id="error-email">(*)</span>
+                    </div>
                 </div>
                 <div class="show-login">
                     <i class="fa-regular fa-eye icon-eye"></i>
                     <u>HIỂN THỊ</u>
                 </div>
                 <div class="input-login-2">
-                    <input style="width: 480px; height: 57px; " type=" text" name="" id="" placeholder="Mật khẩu *">
+                    <input onblur="CheckMatKhau()" style="width: 480px; height: 57px; " type=" text" name="txtmatkhau"
+                        id="txtmatkhau" placeholder="Mật khẩu *">
+                    <div class="error"><span style="color: red;" id="error-matkhau">(*)</span>
+                    </div>
                 </div>
                 <div class="form-tick">
-                    <input style="width: 25px; height: 25px;" type="checkbox" name="" id="">
+                    <input style="width: 25px; height: 25px;" type="checkbox" name="txtcheck" id="txtcheck">
                     <span>Giữ đăng nhập cho tôi.</span>
                     <span><u>Thêm thông tin</u></span>
                 </div>
@@ -530,5 +540,6 @@
 
 
 </body>
+<script src="/js/main.js"></script>
 
 </html>
