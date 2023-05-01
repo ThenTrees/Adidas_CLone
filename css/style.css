@@ -251,6 +251,10 @@ body::-webkit-scrollbar {
   line-height: 20px;
   margin: 0px 20px;
 }
+.btn-mua a {
+  text-decoration: none;
+  color: #333;
+}
 
 .title-slide1 {
   width: 510px;
@@ -357,6 +361,11 @@ body::-webkit-scrollbar {
   line-height: 20px;
   text-align: center;
 }
+.btn-buy-male a,
+.btn-buy-female a {
+  color: white;
+  text-decoration: none;
+}
 
 .icon-male {
   position: absolute;
@@ -439,15 +448,16 @@ body::-webkit-scrollbar {
 
 .flag-btn-mua3 {
   position: absolute;
-  width: 190px;
+  width: 200px;
   height: 60px;
   border: 1px solid #ffff;
   z-index: 1;
-  top: 12.8%;
-  margin-left: -11%;
+  bottom: 84px;
+  margin-left: 50px;
 }
 
 .btn-mua3 {
+  z-index: 99;
   position: relative;
   top: 60%;
   margin-left: 9%;
@@ -459,8 +469,16 @@ body::-webkit-scrollbar {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 22px 25px;
+  padding: 22px 43px;
   line-height: 20px;
+}
+.btn-mua3 a {
+  color: #000;
+  text-decoration: none;
+}
+.icon-mua3 {
+  position: absolute;
+  right: 10px;
 }
 
 .title-who {
@@ -521,24 +539,14 @@ body::-webkit-scrollbar {
   opacity: 0.5;
 }
 
-.btn-mua:hover {
-  opacity: 0.7;
-  color: red;
-}
-
+.btn-mua:hover,
+.btn-buy-female:hover,
 .btn-buy-male:hover {
   opacity: 0.7;
-  color: red;
-}
-
-.btn-buy-female:hover {
-  opacity: 0.7;
-  color: red;
 }
 
 .btn-mua3:hover {
   opacity: 0.7;
-  color: red;
   font-weight: bold;
 }
 
