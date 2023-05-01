@@ -1,0 +1,260 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+main {
+  margin-top: 50px;
+}
+
+/* who-are-details */
+.main-who-detail {
+  margin: 0 auto;
+  width: 80%;
+}
+.product-who-title {
+  margin-top: 100px;
+  position: relative;
+}
+.go-to-home {
+  display: flex;
+}
+.go-to-home a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+}
+.name-who {
+  margin-top: 40px;
+}
+.name-who p:first-child,
+.name-who p:nth-child(2),
+.name-who p:nth-child(3) {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: italic;
+}
+.name-who p:last-child {
+  display: inline-block;
+  margin-left: 5px;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.women-category-right {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 15px;
+  border: 1px solid #000;
+  right: 0;
+  top: 50px;
+}
+.content-week {
+  position: absolute;
+  width: 510px;
+  height: 380px;
+  margin-left: 8%;
+  margin-top: -15%;
+}
+.title-week {
+  width: 200px;
+  position: absolute;
+  margin-top: -37%;
+  margin-left: 3.9%;
+  font-size: 18px;
+  color: #ffff;
+  font-family: "Noto Sans", sans-serif;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.summary-week {
+  position: absolute;
+  width: 250px;
+  color: #ffff;
+  margin-top: -26.5%;
+  margin-left: 3.9%;
+  font-size: 16px;
+}
+.flag-btn-week {
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  border: 1px solid #ffff;
+  left: 5.5%;
+  margin-top: -5.2%;
+}
+.icon-btn-week {
+  margin-left: 20px;
+}
+.btn-week {
+  position: absolute;
+  top: -8%;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 18px 7px;
+  line-height: 20px;
+  margin: 0px 20px;
+}
+
+/* all product  */
+.all-product-women {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px 3px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.item-product-women {
+  width: 100%;
+}
+.icon-heart-women {
+  z-index: 99;
+}
+.card-women {
+  position: relative;
+}
+.card-women img,
+.img-card-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-card-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+.product-women-info {
+  padding: 10px 10px 20px;
+}
+.product-women-info > p {
+  padding: 4px 0;
+  font-size: 14px;
+}
+.price-product {
+  position: absolute;
+  bottom: 0;
+  padding: 2px 4px;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 2px;
+  left: 5px;
+}
+.icon-heart-women {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.paging-women-details {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+}
+.select-page {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #939393;
+}
+.paging-women-details span {
+  padding: 0 10px;
+}
+.icon-cher-page {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.next-to-page span {
+  position: absolute;
+  right: 0;
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+/* hover-product */
+.item-product-women:hover {
+  border: 1px solid #000;
+}
+
+.item-product-women:hover .img-card-2 {
+  position: absolute;
+  opacity: 1;
+}
+.item-product-women:hover .price-product {
+  transition: 1s all ease;
+  z-index: 99;
+  transform: translateY(-10px);
+}
+.next-to-page span:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* end-who-are-details */
+
+/* hover-who-are */
+.go-to-home a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.go-to-home a:last-child:hover {
+  background-color: #fff;
+  color: #000;
+}
+.women-category-right:hover {
+  color: #767677;
+}
+.btn-week:hover {
+  opacity: 0.5;
+}
+/* end-hover-who-are */
