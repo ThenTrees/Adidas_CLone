@@ -281,7 +281,6 @@ body::-webkit-scrollbar {
   width: 332px;
   height: 72px;
   border: 1px solid #ffff;
-  z-index: 1;
   left: 5.5%;
   margin-top: -21.2%;
 }
@@ -543,7 +542,7 @@ body::-webkit-scrollbar {
   font-weight: bold;
 }
 
-/* Hover menu */
+/* end Hover menu */
 /* who-are-shopping-for */
 .container-who {
   min-height: 500px;
@@ -582,6 +581,13 @@ body::-webkit-scrollbar {
 .product_2 {
   position: relative;
 }
+.foot-product-2 {
+  position: relative;
+  height: 53px;
+  border: 1px solid #000;
+  bottom: 0;
+  margin: 0 auto;
+}
 .who_category span {
   position: absolute;
   font-size: 30px;
@@ -589,18 +595,10 @@ body::-webkit-scrollbar {
   top: 40px;
   left: 0;
 }
-.flag-product-2 {
-  position: absolute;
-  width: 342px;
-  height: 53px;
-  border: 1px solid #000;
-  bottom: -53px;
-  left: 0;
-}
 
 .link-product2 p {
   position: absolute;
-  bottom: -37px;
+  bottom: 15px;
   left: 15px;
   font-weight: 600;
   color: #000;
@@ -612,11 +610,11 @@ body::-webkit-scrollbar {
 .icon-product-2 {
   position: absolute;
   right: 15px;
-  bottom: -40px;
+  bottom: 10px;
 }
-.product_2_item {
+/* .product_2_item {
   position: relative;
-}
+} */
 .title-product_1 p {
   padding: 10px 10px 20px;
   font-weight: bold;
@@ -643,6 +641,7 @@ body::-webkit-scrollbar {
 }
 
 /* end-hover-who-are */
+
 /* container*/
 
 .clear {
