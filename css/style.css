@@ -457,7 +457,7 @@ body::-webkit-scrollbar {
 }
 
 .btn-mua3 {
-  z-index: 99;
+  z-index: 2;
   position: relative;
   top: 60%;
   margin-left: 9%;
